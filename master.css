@@ -1,0 +1,32 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+.section-1 {
+  background-image: linear-gradient(to bottom right, rgba(0, 47, 75, 0.5), rgba(220, 66, 37, 0.5)), url("red-forest.jpg");
+  background-color: #333333 33;
+}
+.section-1 h1, .section-1 p {
+  color: #eeeeee;
+}
+.section-1 h1 {
+  font-size: 48px;
+}
+.section-1 p {
+  font-size: 35px;
+}
+
+.section-3 {
+  background-color: grey;
+  display: block;
+}
+
+/*# sourceMappingURL=master.css.map */

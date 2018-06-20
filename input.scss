@@ -1,0 +1,31 @@
+@import 'reset';
+
+$font-family: sans-serif;
+$text-col-dark: #eeeeee;
+$text-col-light: #333333;
+
+* {
+    font-family: $font-family;
+}
+
+.section-1 {
+    background-image:linear-gradient(to bottom right, rgba(0, 47, 75, .5), rgba(220, 66, 37, .5)),url("red-forest.jpg");
+    background-color:#33333333;
+
+    h1, p {
+        color: $text-col-dark;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 35px;
+    }
+}
+
+.section-3 {
+    background-color:grey;
+    display:block;
+}
