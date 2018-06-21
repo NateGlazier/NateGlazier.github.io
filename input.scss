@@ -1,31 +1,78 @@
 @import 'reset';
 
-$font-family: sans-serif;
+$font-stack: 'Lato', Helvetica, Arial, sans;
 $text-col-dark: #eeeeee;
 $text-col-light: #333333;
+$txt-header: 5em;
+$txt-subheader: 2.5em;
 
 * {
-    font-family: $font-family;
+    font-family: $font-stack;
+    box-sizing: border-box;
+}
+
+%section {
+    width: 100%;
+    height: 300pt;
+    color: $text-col-dark;
+
 }
 
 .section-1 {
-    background-image:linear-gradient(to bottom right, rgba(0, 47, 75, .5), rgba(220, 66, 37, .5)),url("red-forest.jpg");
+    @extend %section;
+    
+    position: relative;
+    background-image:linear-gradient(to bottom right, rgba(0, 47, 75, .7), rgba(220, 66, 37, .7)); /*,url("red-forest.jpg");*/
     background-color:#33333333;
 
+    #header {
+        position: absolute;
+        display: block;
+        bottom: 0px;
+    }        
+
     h1, p {
-        color: $text-col-dark;
+        margin: 20px;
+        filter: drop-shadow(1px 1px 1px black);
     }
 
     h1 {
-        font-size: 48px;
+        font-size: $txt-header;
+        font-weight: bold;
     }
 
     p {
-        font-size: 35px;
+        font-size: $txt-subheader;
+        font-weight: 300;
+    }
+}
+
+.section-2 {
+    @extend %section;
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+
+    p {
+        position: relative;
+        float: left;
+
+        font-size:2.25em;
+        padding: 20px;
+        margin: auto;
     }
 }
 
 .section-3 {
+    @extend %section;
     background-color:grey;
     display:block;
+}
+
+.section-4 {
+    @extend %section;
+}
+
+.section-5 {
+    @extend %section;
 }
