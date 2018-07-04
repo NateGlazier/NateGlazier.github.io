@@ -53,56 +53,170 @@ table {
   border-spacing: 0;
 }
 
+.hero {
+  align-items: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 * {
   font-family: "Lato", Helvetica, Arial, sans;
   box-sizing: border-box;
 }
 
-.section-5, .section-4, .section-3, .section-2, .section-1 {
-  width: 100%;
-  height: 100vh;
-  color: #eeeeee;
-  display: flex;
+html {
+  text-rendering: optimizeLegibility;
 }
 
-.section-1 {
-  position: relative;
-  background-image: linear-gradient(to bottom right, rgba(0, 47, 75, 0.7), rgba(220, 66, 37, 0.7));
-  /*,url("red-forest.jpg");*/
-  background-color: #333333 33;
+body {
+  text-align: center !important;
 }
-.section-1 #header {
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.title {
   margin: auto;
-}
-.section-1 h1, .section-1 p {
-  margin: 20px;
-  filter: drop-shadow(1px 1px 1px black);
-}
-.section-1 h1 {
-  font-size: 5em;
+  font-size: 7em;
   font-weight: bold;
 }
-.section-1 p {
-  font-size: 2.5em;
+
+.subtitle {
+  font-size: 3em;
   font-weight: 300;
 }
 
-.section-2 {
-  background-color: #222222;
+.about {
+  background-color: #333333;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.section-2 p {
-  position: relative;
-  float: left;
-  font-size: 2.25em;
-  padding: 20px;
+
+.columns {
+  display: flex;
+  justify-content: center;
+}
+
+section {
   margin: auto;
+  padding: 5em;
+  height: 100vh;
+}
+
+p {
+  margin: auto;
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  line-height: 1.5;
+  width: 60%;
+  text-align: center;
+}
+
+/*
+%section {
+    width: 100%;
+    height: 100vh;
+    color: $text-col-dark;
+    display: flex;
+
+}
+
+.header {
+    font-size: 4em;
+}
+
+.section-1 {
+    @extend %section;
+
+    position: relative;
+    background-image:linear-gradient(to bottom right, rgba(0, 47, 75, .7), rgba(220, 66, 37, .7)); /*,url("red-forest.jpg");
+    background-color:#33333333;
+    text-align:center;
+
+    #header {
+        filter: drop-shadow(1px 1px 1px black);
+        margin:auto;
+        line-height: 5em;
+    }
+
+/*    h1, p {
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: $txt-header;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: $txt-subheader;
+        font-weight: 300;
+    }
+}
+
+.section-2 {
+    @extend %section;
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+
+    p {
+        position: relative;
+        font-size:2.25em;
+        margin: auto;
+
+    }
+
 }
 
 .section-3 {
-  background-color: grey;
-  display: block;
+    @extend %section;
+    background-color:grey;
+    display:block;
 }
+
+.section-4 {
+    @extend %section;
+}
+
+.section-5 {
+    @extend %section;
+}
+
+.text-left {
+    position: relative;
+    display:block;
+    margin: auto;
+}
+
+.text-right {
+    display:block;
+    position: relative;
+    float: right;
+    margin: auto;
+}
+
+.button {
+    position: relative;
+    font-size: 2em;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+*/
 
 /*# sourceMappingURL=master.css.map */
