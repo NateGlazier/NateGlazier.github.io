@@ -102,6 +102,17 @@ body {
   justify-content: center;
 }
 
+.hidden {
+  display: none;
+}
+
+.section-4 {
+  position: absolute;
+  right: 1vw;
+  bottom: 1vw;
+  width: 20%;
+}
+
 section {
   margin: auto;
   padding: 5em;
