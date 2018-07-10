@@ -71,6 +71,7 @@ html {
 
 body {
   text-align: center !important;
+  background-color: #ffffff;
 }
 
 .column {
@@ -135,7 +136,7 @@ nav li {
   padding: 0.6em;
 }
 nav .active .cd-dot {
-  background-color: greenyellow;
+  background-color: #ffffff;
 }
 nav a {
   display: inline-block;
@@ -157,12 +158,13 @@ nav a:hover .cd-label {
 }
 nav .cd-dot {
   position: relative;
-  background-color: #333333;
+  background-color: #555;
   top: 5px;
   height: 3em;
   width: 3em;
   transform-origin: 50% 50%;
   border-radius: 50%;
+  box-shadow: inset 0 0 7px -3px #222;
 }
 nav .cd-label {
   opacity: 0;
