@@ -6,7 +6,7 @@ $text-col-dark: #eeeeee;
 $text-col-light: #333333;
 $txt-header: 7em;
 $txt-subheader: 3em;
-$txt-menu: 1.5em;
+$txt-menu: 2em;
 
 * {
     font-family: $font-stack;
@@ -80,31 +80,63 @@ nav {
     bottom: auto;
     transform: translateY(-50%);
 
-    a span {
-        float: right;
-        font-size: $txt-subheader;
-        color: #fff;
-        opacity: 0;
-        transform: scale(0.6);
+    li {
+        text-align: right;
+        padding: .6em;
     }
 
+    .active {
+        .cd-dot {
+            background-color: greenyellow;
+        }
+    }
+
+    a {
+        display: inline-block;
+    
+
+        span {
+            float: right;
+            display: inline-block;
+            // font-size: $txt-menu;
+            // padding: 3em;
+            vertical-align: middle;
+            transform: scale(0.6);
+            transition: 0.5s;
+       }
+
+       &:hover span {
+
+        transform: scale(1);
+        transition: 0.5s;
+        }
+        
+        &:hover .cd-label {
+            opacity: 0.5;
+            transition: opacity 0.6s linear;
+        }
+    }   
+
     .cd-dot {
+        position: relative;
+        background-color: $text-col-light;
+        top: 5px;
+        height: 3em;
+        width: 3em;
         transform-origin: 50% 50%;
+        border-radius: 50%;
     }
 
     .cd-label {
-        transform-origin: 100% 50%;
-    }
-
-    a:hover span {
-
-        transform: scale(1);
-    }
-
-    a:hover .cd-label {
+        opacity: 0;
+        font-size: $txt-menu;
+        position: relative;
+        margin-right: 10px;
+        padding: .4em .5em;
+        vertical-align: middle;
         color: $text-col-light;
-        opacity: 0.5;
-        transition: opacity 0.8s linear;
+        transform-origin: 100% 50%;
+
     }
 }
 

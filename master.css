@@ -121,7 +121,7 @@ section {
 }
 
 nav {
-  font-size: 1.5em;
+  font-size: 2em;
   position: fixed;
   color: #000;
   z-index: 1;
@@ -130,26 +130,49 @@ nav {
   bottom: auto;
   transform: translateY(-50%);
 }
+nav li {
+  text-align: right;
+  padding: 0.6em;
+}
+nav .active .cd-dot {
+  background-color: greenyellow;
+}
+nav a {
+  display: inline-block;
+}
 nav a span {
   float: right;
-  font-size: 3em;
-  color: #fff;
-  opacity: 0;
+  display: inline-block;
+  vertical-align: middle;
   transform: scale(0.6);
-}
-nav .cd-dot {
-  transform-origin: 50% 50%;
-}
-nav .cd-label {
-  transform-origin: 100% 50%;
+  transition: 0.5s;
 }
 nav a:hover span {
   transform: scale(1);
+  transition: 0.5s;
 }
 nav a:hover .cd-label {
-  color: #333333;
   opacity: 0.5;
-  transition: opacity 0.8s linear;
+  transition: opacity 0.6s linear;
+}
+nav .cd-dot {
+  position: relative;
+  background-color: #333333;
+  top: 5px;
+  height: 3em;
+  width: 3em;
+  transform-origin: 50% 50%;
+  border-radius: 50%;
+}
+nav .cd-label {
+  opacity: 0;
+  font-size: 2em;
+  position: relative;
+  margin-right: 10px;
+  padding: 0.4em 0.5em;
+  vertical-align: middle;
+  color: #333333;
+  transform-origin: 100% 50%;
 }
 
 p {
