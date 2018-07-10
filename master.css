@@ -117,6 +117,37 @@ section {
   margin: auto;
   padding: 5em;
   height: 100vh;
+  z-index: 2;
+}
+
+nav {
+  font-size: 1.5em;
+  position: fixed;
+  color: #000;
+  z-index: 1;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+nav a span {
+  float: right;
+  font-size: 3em;
+  color: #fff;
+  transform: scale(0.6);
+}
+nav .cd-dot {
+  transform-origin: 50% 50%;
+}
+nav .cd-label {
+  transform-origin: 100% 50%;
+}
+nav a:hover span {
+  transform: scale(1);
+}
+nav a:hover .cd-label {
+  color: #333333;
+  opacity: 0.5;
 }
 
 p {

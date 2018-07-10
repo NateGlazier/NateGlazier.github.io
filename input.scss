@@ -6,6 +6,7 @@ $text-col-dark: #eeeeee;
 $text-col-light: #333333;
 $txt-header: 7em;
 $txt-subheader: 3em;
+$txt-menu: 1.5em;
 
 * {
     font-family: $font-stack;
@@ -55,18 +56,56 @@ body {
     display: none;
 }
 
- .section-4 {
-     position: absolute;
-     right: 1vw;
-     bottom: 1vw;
-     width: 20%;
+.section-4 {
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw;
+    width: 20%;
  }
 
-section {
+ section {
     margin: auto;
     padding: 5em;
     height: 100vh;
+    z-index: 2;
 }
+
+nav {
+    font-size: $txt-menu;
+    position: fixed;
+    color: #000;
+    z-index: 1;
+    right: 40px;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+
+    a span {
+        float: right;
+        font-size: $txt-subheader;
+        color: #fff;
+        transform: scale(0.6);
+    }
+
+    .cd-dot {
+        transform-origin: 50% 50%;
+    }
+
+    .cd-label {
+        transform-origin: 100% 50%;
+    }
+
+    a:hover span {
+
+        transform: scale(1);
+    }
+
+    a:hover .cd-label {
+        color: $text-col-light;
+        opacity: 0.5;
+    }
+}
+
 
 p {
     margin: auto;
