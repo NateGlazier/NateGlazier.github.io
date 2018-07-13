@@ -23,232 +23,47 @@ body {
     background-color: $background;
 }
 
-.column {
-    display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-
-}
-
-.title {
-    margin: auto;
-    font-size: $txt-header;
-    font-weight: bold;
-}
-
-.subtitle {
-    font-size: $txt-subheader;
-    font-weight: 300;
-}
-
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
-.columns {
-    display: flex;
-    justify-content: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.section-4 {
-    position: absolute;
-    right: 1vw;
-    bottom: 1vw;
-    width: 20%;
- }
-
- section {
-    margin: auto;
-    padding: 5em;
-    height: 100vh;
-    z-index: 2;
-}
-
-nav {
-    font-size: $txt-menu;
-    position: fixed;
-    color: #000;
-    z-index: 1;
-    right: 40px;
-    top: 50%;
-    bottom: auto;
-    transform: translateY(-50%);
-
-    li {
-        text-align: right;
-        padding: .6em;
-    }
-
-    .active {
-        .cd-dot {
-            background-color: $background;
-        }
-    }
-
-    a {
-        display: inline-block;
-    
-
-        span {
-            float: right;
-            display: inline-block;
-            // font-size: $txt-menu;
-            // padding: 3em;
-            vertical-align: middle;
-            transform: scale(0.6);
-            transition: 0.5s;
-       }
-
-       &:hover span {
-
-        transform: scale(1);
-        transition: 0.5s;
-        }
-        
-        &:hover .cd-label {
-            opacity: 0.5;
-            transition: opacity 0.6s linear;
-        }
-    }   
-
-    .cd-dot {
-        position: relative;
-        background-color: #555;
-        top: 5px;
-        height: 3em;
-        width: 3em;
-        transform-origin: 50% 50%;
-        border-radius: 50%;
-        box-shadow: inset 0 0 7px -3px #222;
-    }
-
-    .cd-label {
-        opacity: 0;
-        font-size: $txt-menu;
-        position: relative;
-        margin-right: 10px;
-        padding: .4em .5em;
-        vertical-align: middle;
-        color: $text-col-light;
-        transform-origin: 100% 50%;
-
-    }
-}
-
-
-p {
-    margin: auto;
-    font-size: 2em;
-    font-weight: 300;
-    line-height: 1.5;
-    width: 60%;
-    text-align: center;
-}
-
-/*
-%section {
-    width: 100%;
-    height: 100vh;
-    color: $text-col-dark;
-    display: flex;
-
-}
-
-.header {
-    font-size: 4em;
-}
-
-.section-1 {
-    @extend %section;
-    
+section {
     position: relative;
-    background-image:linear-gradient(to bottom right, rgba(0, 47, 75, .7), rgba(220, 66, 37, .7)); /*,url("red-forest.jpg");
-    background-color:#33333333;
-    text-align:center;
-
-    #header {
-        filter: drop-shadow(1px 1px 1px black);
-        margin:auto;
-        line-height: 5em;
-    }
-    
-/*    h1, p {
-        margin: 20px;
-    }
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     h1 {
         font-size: $txt-header;
         font-weight: bold;
     }
-
-    p {
+    h2 {
         font-size: $txt-subheader;
         font-weight: 300;
     }
-}
-
-.section-2 {
-    @extend %section;
-    background-color: #222222;
-    display: flex;
-    flex-direction: row;
-
     p {
-        position: relative;
-        font-size:2.25em;
-        margin: auto;
-
+        font-size: $txt-menu;
+        font-weight: 400;
     }
-
 }
 
-.section-3 {
-    @extend %section;
-    background-color:grey;
-    display:block;
+nav {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    width: 50px;
+    z-index: 9999;
+    list-style: none;
+
+    ul {
+        position: relative;
+        padding: 3px;
+        padding-left: 35%;
+        li {
+            position: relative;
+            padding-bottom: 20px;
+            padding-left: 35%;
+            color: blue;
+        }
+    }
 }
 
-.section-4 {
-    @extend %section;
-}
-
-.section-5 {
-    @extend %section;
-}
-
-.text-left {
-    position: relative;
-    display:block;
-    margin: auto;
-}
-
-.text-right {
-    display:block;
-    position: relative;
-    float: right;
-    margin: auto;
-}
-
-.button {
-    position: relative;
-    font-size: 2em;
-
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-*/
