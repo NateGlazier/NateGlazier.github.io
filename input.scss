@@ -52,7 +52,7 @@ section {
 nav {
     position: fixed;
     top: 2%;
-    width: 15%;
+    min-width: 15%;
     right: 5%;
     list-style: none;
     z-index: 100;
